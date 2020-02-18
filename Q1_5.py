@@ -11,7 +11,6 @@ def sha2_256(hash_string):
 class MerkleTree():
 
     listoftransactions = []
-    
     root = 'a'
     
     def add(self,listoftransactions):

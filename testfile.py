@@ -96,9 +96,9 @@ def as_payload(dct):
 
 new_Payload = Payload(1,2,3)
 message = json.dumps(new_Payload.__dict__, sort_keys=True)
-print(type(message))
+#print(type(message))
 payload = json.loads(message, object_hook = as_payload)
-print(payload.action)
+#print(payload.action)
 
 
 #To verify an existing signature with a public key:
@@ -117,3 +117,8 @@ import ecdsa
 
 # vk = ecdsa.VerifyingKey.from_string(bytes.fromhex(public_key), curve=ecdsa.SECP256k1)
 # print(vk.verify(bytes.fromhex(sig), message)) # True
+
+
+import datetime 
+print(datetime.datetime.now())
+print(datetime.datetime.now().year)
